@@ -12,10 +12,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class BootJob implements Job {
-
   @Autowired private UserService userService;
-
-  public BootJob() {}
 
   @Override
   public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
